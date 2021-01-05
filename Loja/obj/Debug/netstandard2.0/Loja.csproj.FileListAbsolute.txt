@@ -1,0 +1,9 @@
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\bin\Debug\netstandard2.0\Loja.deps.json
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\bin\Debug\netstandard2.0\Loja.dll
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.csprojAssemblyReference.cache
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.AssemblyInfoInputs.cache
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.AssemblyInfo.cs
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\bin\Debug\netstandard2.0\Loja.pdb
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.csproj.CoreCompileInputs.cache
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.dll
+C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.pdb
