@@ -29,6 +29,19 @@ namespace LojaManager
             txtNome.DataBindings.Add("Text", dados, "Nome", true, DataSourceUpdateMode.OnPropertyChanged);
             txtTipo.DataBindings.Add("Text", dados, "Tipo", true, DataSourceUpdateMode.OnPropertyChanged);
             txtDataCadastro.DataBindings.Add("Text", dados, "DataCadastro", true, DataSourceUpdateMode.OnPropertyChanged);
+
+            txtCodigoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Codigo", true, DataSourceUpdateMode.OnPropertyChanged);
+            txtDadosContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Dados Contato", true, DataSourceUpdateMode.OnPropertyChanged);
+            txtTipoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Tipo", true, DataSourceUpdateMode.OnPropertyChanged);
+            txtClienteContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Cliente", true, DataSourceUpdateMode.OnPropertyChanged);
+
+
+            dados.CurrentChanged += dados_CurrentChanged;
+        }
+
+        void dados_CurrentChanged(object sender, EventArgs e)
+        {
+            dgvContatos.DataSource = ((Cliente)dados.Current).Contatos;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,5 +64,7 @@ namespace LojaManager
             }
             
         }
+
+
     }
 }

@@ -12,3 +12,17 @@ C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\LojaManager\obj\Debug\Loj
 C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\LojaManager\obj\Debug\LojaManager.pdb
 C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\LojaManager\obj\Debug\LojaManager.Form1.resources
 C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\LojaManager\bin\Debug\System.Data.SqlClient.dll
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.csprojAssemblyReference.cache
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.Form1.resources
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.Properties.Resources.resources
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.csproj.GenerateResource.cache
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.csproj.CoreCompileInputs.cache
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.exe
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.pdb
+C:\Projetos\LojaOnline\LojaManager\bin\Debug\LojaManager.exe.config
+C:\Projetos\LojaOnline\LojaManager\bin\Debug\LojaManager.exe
+C:\Projetos\LojaOnline\LojaManager\bin\Debug\LojaManager.pdb
+C:\Projetos\LojaOnline\LojaManager\bin\Debug\Loja.dll
+C:\Projetos\LojaOnline\LojaManager\bin\Debug\System.Data.SqlClient.dll
+C:\Projetos\LojaOnline\LojaManager\bin\Debug\Loja.pdb
+C:\Projetos\LojaOnline\LojaManager\obj\Debug\LojaManager.csproj.CopyComplete

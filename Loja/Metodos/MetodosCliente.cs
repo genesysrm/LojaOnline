@@ -143,7 +143,7 @@ namespace Loja.Classes
             }
         }
 
-        public Cliente()
+    public Cliente()
         {
             this._codigo = Proximo();
             this._isNew = true;
@@ -179,6 +179,8 @@ namespace Loja.Classes
                             this._nome = dr.GetString(dr.GetOrdinal("Nome"));
                             this._tipo = dr.GetInt32(dr.GetOrdinal("Tipo"));
                             this._datacadastro = dr.GetDateTime(dr.GetOrdinal("DataCadastro"));
+
+                           
                         }
                     }
                     this._isNew = false;
@@ -248,11 +250,13 @@ namespace Loja.Classes
                         if (dr.HasRows)
                         {
                             while (dr.Read()) {
-                                Cliente cli = new Cliente();
-                                cli._codigo = dr.GetInt32(dr.GetOrdinal("Codigo"));
-                                cli._nome = dr.GetString(dr.GetOrdinal("Nome"));
-                                cli._tipo = dr.GetInt32(dr.GetOrdinal("Tipo"));
-                                cli._datacadastro = dr.GetDateTime(dr.GetOrdinal("DataCadastro"));
+                                Cliente cli = ConvertRowEntity(dr);
+                          //   cli._codigo = dr.GetInt32(dr.GetOrdinal("Codigo"));
+                          //   cli._nome = dr.GetString(dr.GetOrdinal("Nome"));
+                          //   cli._tipo = dr.GetInt32(dr.GetOrdinal("Tipo"));
+                          //   cli._datacadastro = dr.GetDateTime(dr.GetOrdinal("DataCadastro"));
+
+                                cli.Contatos = Contato.Todos(cli._codigo);
 
                                 if (_return == null)
                                     _return = new List<Cliente>();

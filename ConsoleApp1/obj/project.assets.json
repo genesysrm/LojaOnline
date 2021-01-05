@@ -470,40 +470,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GenesysdelValleRondo\\.nuget\\packages\\": {},
+    "C:\\Users\\genes\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Projetos\\LojaOnline\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\GenesysdelValleRondo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Projetos\\LojaOnline\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\genes\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\LojaOnline\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\GenesysdelValleRondo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\genes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "http://proget.icatuseguros.com.br/nuget/Icatu/": {},
-        "http://tfs.icatuseguros.com.br/tfs/IcatuCollection/_packaging/Corporativo/nuget/v3/index.json": {},
-        "http://tfs.icatuseguros.com.br/tfs/IcatuCollection/_packaging/Previdencia/nuget/v3/index.json": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\Loja\\Loja.csproj": {
-              "projectPath": "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\Loja\\Loja.csproj"
+            "C:\\Projetos\\LojaOnline\\Loja\\Loja.csproj": {
+              "projectPath": "C:\\Projetos\\LojaOnline\\Loja\\Loja.csproj"
             }
           }
         }

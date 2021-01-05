@@ -7,3 +7,12 @@ C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\bin\Debug\netstandar
 C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.csproj.CoreCompileInputs.cache
 C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.dll
 C:\Users\GenesysdelValleRondo\source\repos\ConsoleApp1\Loja\obj\Debug\netstandard2.0\Loja.pdb
+C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.csprojAssemblyReference.cache
+C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.AssemblyInfoInputs.cache
+C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.AssemblyInfo.cs
+C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.csproj.CoreCompileInputs.cache
+C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.dll
+C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.pdb
+C:\Projetos\LojaOnline\Loja\bin\Debug\netstandard2.0\Loja.deps.json
+C:\Projetos\LojaOnline\Loja\bin\Debug\netstandard2.0\Loja.dll
+C:\Projetos\LojaOnline\Loja\bin\Debug\netstandard2.0\Loja.pdb

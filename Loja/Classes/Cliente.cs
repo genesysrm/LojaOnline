@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Loja.Classes
 {
-    public  partial class Cliente
+    public  partial class Cliente : Backwork<Cliente>
     {
         private bool _isNew;
         [Browsable(false)]

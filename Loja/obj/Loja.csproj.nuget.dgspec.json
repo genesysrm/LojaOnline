@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\Loja\\Loja.csproj": {}
+    "C:\\Projetos\\LojaOnline\\Loja\\Loja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\Loja\\Loja.csproj": {
+    "C:\\Projetos\\LojaOnline\\Loja\\Loja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\Loja\\Loja.csproj",
+        "projectUniqueName": "C:\\Projetos\\LojaOnline\\Loja\\Loja.csproj",
         "projectName": "Loja",
-        "projectPath": "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\Loja\\Loja.csproj",
-        "packagesPath": "C:\\Users\\GenesysdelValleRondo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GenesysdelValleRondo\\source\\repos\\ConsoleApp1\\Loja\\obj\\",
+        "projectPath": "C:\\Projetos\\LojaOnline\\Loja\\Loja.csproj",
+        "packagesPath": "C:\\Users\\genes\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\LojaOnline\\Loja\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\GenesysdelValleRondo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\genes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "http://proget.icatuseguros.com.br/nuget/Icatu/": {},
-          "http://tfs.icatuseguros.com.br/tfs/IcatuCollection/_packaging/Corporativo/nuget/v3/index.json": {},
-          "http://tfs.icatuseguros.com.br/tfs/IcatuCollection/_packaging/Previdencia/nuget/v3/index.json": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
