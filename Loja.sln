@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loja", "Loja\Loja.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaManager", "LojaManager\LojaManager.csproj", "{0F50D133-93D3-4542-A1BB-CCC0DB623297}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{07C043CD-6ACF-46BA-854B-136883A55814}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{0F50D133-93D3-4542-A1BB-CCC0DB623297}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F50D133-93D3-4542-A1BB-CCC0DB623297}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F50D133-93D3-4542-A1BB-CCC0DB623297}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07C043CD-6ACF-46BA-854B-136883A55814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07C043CD-6ACF-46BA-854B-136883A55814}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07C043CD-6ACF-46BA-854B-136883A55814}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07C043CD-6ACF-46BA-854B-136883A55814}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

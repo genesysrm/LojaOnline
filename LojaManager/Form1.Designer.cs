@@ -44,11 +44,11 @@
             this.txtCodigoContato = new System.Windows.Forms.TextBox();
             this.txtClienteContato = new System.Windows.Forms.TextBox();
             this.txtTipoContato = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDadosContato = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDadosContato = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContatos)).BeginInit();
             this.SuspendLayout();
@@ -188,12 +188,12 @@
             this.txtTipoContato.Size = new System.Drawing.Size(161, 20);
             this.txtTipoContato.TabIndex = 16;
             // 
-            // textBox4
+            // txtDadosContato
             // 
-            this.textBox4.Location = new System.Drawing.Point(635, 371);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 20);
-            this.textBox4.TabIndex = 17;
+            this.txtDadosContato.Location = new System.Drawing.Point(635, 371);
+            this.txtDadosContato.Name = "txtDadosContato";
+            this.txtDadosContato.Size = new System.Drawing.Size(133, 20);
+            this.txtDadosContato.TabIndex = 17;
             // 
             // label1
             // 
@@ -222,25 +222,25 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "Tipo";
             // 
-            // txtDadosContato
+            // label42
             // 
-            this.txtDadosContato.AutoSize = true;
-            this.txtDadosContato.Location = new System.Drawing.Point(551, 374);
-            this.txtDadosContato.Name = "txtDadosContato";
-            this.txtDadosContato.Size = new System.Drawing.Size(78, 13);
-            this.txtDadosContato.TabIndex = 21;
-            this.txtDadosContato.Text = "Dados Contato";
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(551, 374);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(78, 13);
+            this.label42.TabIndex = 21;
+            this.label42.Text = "Dados Contato";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtDadosContato);
+            this.Controls.Add(this.label42);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtDadosContato);
             this.Controls.Add(this.txtTipoContato);
             this.Controls.Add(this.txtClienteContato);
             this.Controls.Add(this.txtCodigoContato);
@@ -284,11 +284,11 @@
         private System.Windows.Forms.TextBox txtCodigoContato;
         private System.Windows.Forms.TextBox txtClienteContato;
         private System.Windows.Forms.TextBox txtTipoContato;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDadosContato;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label txtDadosContato;
+        private System.Windows.Forms.Label label42;
     }
 }
 

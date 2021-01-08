@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace Loja.Classes
 {
-    public partial class Contato
+    public partial class Contato : Backwork<Contato>
     {
         private bool _isNew;
         [Browsable(false)]

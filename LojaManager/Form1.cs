@@ -31,9 +31,9 @@ namespace LojaManager
             txtDataCadastro.DataBindings.Add("Text", dados, "DataCadastro", true, DataSourceUpdateMode.OnPropertyChanged);
 
             txtCodigoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Codigo", true, DataSourceUpdateMode.OnPropertyChanged);
-            txtDadosContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Dados Contato", true, DataSourceUpdateMode.OnPropertyChanged);
+            txtDadosContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "DadosContato", true, DataSourceUpdateMode.OnPropertyChanged);
             txtTipoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Tipo", true, DataSourceUpdateMode.OnPropertyChanged);
-            txtClienteContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Cliente", true, DataSourceUpdateMode.OnPropertyChanged);
+            
 
 
             dados.CurrentChanged += dados_CurrentChanged;

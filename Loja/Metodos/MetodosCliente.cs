@@ -25,7 +25,7 @@ namespace Loja.Classes
     {
     public void Insert()
         {
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database=Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -36,32 +36,18 @@ namespace Loja.Classes
 
                     throw;
                 }
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.CommandText = "Insert into Cliente (Codigo, Nome, Tipo, DataCadastro) Values (@codigo, @nome, @tipo, @datacadastro)";
-                    cmd.Connection = cn;
 
-                    cmd.Parameters.AddWithValue("@codigo", this._codigo);
-                    cmd.Parameters.AddWithValue("@nome", this._nome);
-                    cmd.Parameters.AddWithValue("@tipo", this._tipo);
-                    cmd.Parameters.AddWithValue("@datacadastro", this._datacadastro);
-
-                    try
-                    {
-                        cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception)
-                    {
-
-                        throw;
-                    }
-
-                }
+                SqlCommand cmd = this.GetInsertCommand();
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
             }
+               
+          
     }
     public void Update()
         {
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database=Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -110,7 +96,7 @@ namespace Loja.Classes
 
     public void Apagar()
         {
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database=Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -192,7 +178,7 @@ namespace Loja.Classes
     public static Int32 Proximo()
         {
             Int32 _return = 0;
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database = Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -228,7 +214,7 @@ namespace Loja.Classes
         {
             List<Cliente> _return = null;
 
-            using (System.Data.SqlClient.SqlConnection cn = new System.Data.SqlClient.SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database = Loja;Trusted_Connection=true;"))
+            using (System.Data.SqlClient.SqlConnection cn = new System.Data.SqlClient.SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {

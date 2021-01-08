@@ -27,6 +27,7 @@ namespace Loja.Classes
 
         private int _codigo;
         [DisplayName("Código")]
+        [DataObjectField(true,true,false)]
         public int Codigo
         {
             get { 
@@ -46,6 +47,7 @@ namespace Loja.Classes
 
         private string _nome;
         [DisplayName("Nome do cliente")]
+        [DataObjectField(false, false, true)]
         public string Nome
         {
             get {
@@ -63,6 +65,7 @@ namespace Loja.Classes
         
         private int _tipo;
         [DisplayName("Tipo de cliente")]
+        [DataObjectField(false, false, true)]
 
         public int Tipo
         {
@@ -77,6 +80,7 @@ namespace Loja.Classes
 
         private DateTime _datacadastro;
         [DisplayName("Data de cadastro")]
+        [DataObjectField(false, false, true)]
         public DateTime DataCadastro
         {
             get {

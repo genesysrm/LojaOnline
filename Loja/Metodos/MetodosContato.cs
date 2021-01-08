@@ -11,7 +11,7 @@ namespace Loja.Classes
 
         public void Insert()
         {
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database=Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -22,32 +22,17 @@ namespace Loja.Classes
 
                     throw;
                 }
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.CommandText = "Insert into Contato (Codigo, DadosContato, Tipo) Values (@codigo, @dadoscontato, @tipo, @cliente)";
-                    cmd.Connection = cn;
 
-                    cmd.Parameters.AddWithValue("@codigo", this._codigo);
-                    cmd.Parameters.AddWithValue("@nome", this._dadoscontato);
-                    cmd.Parameters.AddWithValue("@tipo", this._tipo);
-                    cmd.Parameters.AddWithValue("@cliente", this._cliente);
-
-                    try
-                    {
-                        cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception)
-                    {
-
-                        throw;
-                    }
-
-                }
+                SqlCommand cmd = this.GetInsertCommand();
+                cn.Open();
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
             }
+
         }
         public void Update()
         {
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database=Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -60,7 +45,7 @@ namespace Loja.Classes
                 }
                 using (SqlCommand cmd = new SqlCommand())
                 {
-                    cmd.CommandText = "Update Contato Set DadosContato = @dadoscontato, Tipo = @tipo Where Codigo = @codigo";
+                    cmd.CommandText = "Update Contato Set DadosContato = @dadoscontato, Tipo = @tipo, Cliente = @cliente Where Codigo = @codigo";
                     cmd.Connection = cn;
 
                     cmd.Parameters.AddWithValue("@codigo", this._codigo);
@@ -97,7 +82,7 @@ namespace Loja.Classes
 
         public void Apagar()
         {
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database=Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -140,7 +125,7 @@ namespace Loja.Classes
         public Contato(int Codigo)
         {
             //TODO: Criar o procedimento de leitura baseado no parâmetro codigo
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database = Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -179,7 +164,7 @@ namespace Loja.Classes
         public static Int32 Proximo()
         {
             Int32 _return = 0;
-            using (SqlConnection cn = new SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database = Loja;Trusted_Connection=true;"))
+            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -215,7 +200,7 @@ namespace Loja.Classes
         {
             List<Contato> _return = null;
 
-            using (System.Data.SqlClient.SqlConnection cn = new System.Data.SqlClient.SqlConnection("Server=DESKTOP-T5DB7OK\\SQLEXPRESS;Database = Loja;Trusted_Connection=true;"))
+            using (System.Data.SqlClient.SqlConnection cn = new System.Data.SqlClient.SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
             {
                 try
                 {
@@ -239,11 +224,11 @@ namespace Loja.Classes
                         {
                             while (dr.Read())
                             {
-                                Contato con = new Contato();
-                                con._codigo = dr.GetInt32(dr.GetOrdinal("Codigo"));
-                                con._dadoscontato = dr.GetString(dr.GetOrdinal("Dados Contato"));
-                                con._tipo = dr.GetInt32(dr.GetOrdinal("Tipo"));
-                                con._cliente = dr.GetInt32(dr.GetOrdinal("Cliente"));
+                                Contato con = ConvertRowEntity(dr);
+                       //       con._codigo = dr.GetInt32(dr.GetOrdinal("Codigo"));
+                       //       con._dadoscontato = dr.GetString(dr.GetOrdinal("Dados Contato"));
+                       //       con._tipo = dr.GetInt32(dr.GetOrdinal("Tipo"));
+                       //       con._cliente = dr.GetInt32(dr.GetOrdinal("Cliente"));
                                 
 
                                 
