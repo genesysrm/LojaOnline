@@ -6,25 +6,9 @@ using System.Text;
 
 namespace Loja.Classes
 {
-    public  partial class Cliente : Backwork<Cliente>
+    public  partial class Cliente : Backwork<Cliente>, ICRUD
     {
-        private bool _isNew;
-        [Browsable(false)]
-        public bool IsNew
-        {
-            get { return _isNew; }
-            
-        }
-
-        private bool _isModified;
-        [Browsable(false)]
-        public bool IsModified
-        {
-            get { return _isModified; }
-          
-        }
-
-
+     
         private int _codigo;
         [DisplayName("Código")]
         [DataObjectField(true,true,false)]
@@ -104,8 +88,18 @@ namespace Loja.Classes
             }
         }
 
-        
-        
+        private bool _isNew;       
+        private bool _isModified;
 
+        [Browsable(false)]
+        public bool IsNew
+        {
+            get { return _isNew; }
+        }
+        [Browsable(false)]
+       public bool IsModified
+        {
+            get { return _isModified; }
+        }
     }
 }

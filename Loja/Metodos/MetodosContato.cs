@@ -8,113 +8,7 @@ namespace Loja.Classes
 {
     public partial class Contato : IDisposable
     {      
-
-        public void Insert()
-        {
-            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
-            {
-                try
-                {
-                    cn.Open();
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-
-                SqlCommand cmd = this.GetInsertCommand();
-                cn.Open();
-                cmd.Connection = cn;
-                cmd.ExecuteNonQuery();
-            }
-
-        }
-        public void Update()
-        {
-            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
-            {
-                try
-                {
-                    cn.Open();
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.CommandText = "Update Contato Set DadosContato = @dadoscontato, Tipo = @tipo, Cliente = @cliente Where Codigo = @codigo";
-                    cmd.Connection = cn;
-
-                    cmd.Parameters.AddWithValue("@codigo", this._codigo);
-                    cmd.Parameters.AddWithValue("@dadoscontato", this._dadoscontato);
-                    cmd.Parameters.AddWithValue("@tipo", this._tipo);
-                    cmd.Parameters.AddWithValue("@cliente", this._cliente);
-
-
-                    try
-                    {
-                        cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception)
-                    {
-
-                        throw;
-                    }
-
-                }
-            }
-        }
-        public void Gravar()
-        {
-            if (this._isNew)
-            {
-                Insert();
-            }
-            else if (this._isModified)
-            {
-                Update();
-            }
-
-        }
-
-        public void Apagar()
-        {
-            using (SqlConnection cn = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=Loja;Trusted_Connection=true;"))
-            {
-                try
-                {
-                    cn.Open();
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.CommandText = "Delete Contato Where Codigo = @codigo";
-                    cmd.Connection = cn;
-
-                    cmd.Parameters.AddWithValue("@codigo", this._codigo);
-
-
-                    try
-                    {
-                        cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception)
-                    {
-
-                        throw;
-                    }
-
-                }
-            }
-        }
-
+ 
         public Contato()
         {
             this._codigo = Proximo();
@@ -225,14 +119,7 @@ namespace Loja.Classes
                             while (dr.Read())
                             {
                                 Contato con = ConvertRowEntity(dr);
-                       //       con._codigo = dr.GetInt32(dr.GetOrdinal("Codigo"));
-                       //       con._dadoscontato = dr.GetString(dr.GetOrdinal("Dados Contato"));
-                       //       con._tipo = dr.GetInt32(dr.GetOrdinal("Tipo"));
-                       //       con._cliente = dr.GetInt32(dr.GetOrdinal("Cliente"));
-                                
-
-                                
-
+                                                    
                                 if (_return == null)
                                     _return = new List<Contato>();
 

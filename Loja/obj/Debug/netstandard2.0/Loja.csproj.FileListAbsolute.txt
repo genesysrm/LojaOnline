@@ -15,3 +15,4 @@ C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.pdb
 C:\Projetos\LojaOnline\Loja\bin\Debug\netstandard2.0\Loja.deps.json
 C:\Projetos\LojaOnline\Loja\bin\Debug\netstandard2.0\Loja.dll
 C:\Projetos\LojaOnline\Loja\bin\Debug\netstandard2.0\Loja.pdb
+C:\Projetos\LojaOnline\Loja\obj\Debug\netstandard2.0\Loja.csprojAssemblyReference.cache

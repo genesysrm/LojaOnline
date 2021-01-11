@@ -23,7 +23,7 @@ namespace Loja.Classes
 
 
         private int _codigo;
-        
+        [DataObjectField(true, true, false)]
         public int Codigo
         {
             get
@@ -43,7 +43,8 @@ namespace Loja.Classes
         }
 
         private string _dadoscontato;
-        
+        [DataObjectField(false, false, true)]
+
         public string DadosContato
         {
             get
@@ -59,7 +60,8 @@ namespace Loja.Classes
         }
 
         private int _tipo;
-        
+        [DataObjectField(false, false, true)]
+
 
         public int Tipo
         {
@@ -76,6 +78,7 @@ namespace Loja.Classes
 
         private int _cliente;
         [Browsable(false)]
+        [DataObjectField(false, false, true)]
         public int Cliente
         {
             get { return _cliente; }

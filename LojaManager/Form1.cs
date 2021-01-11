@@ -22,7 +22,7 @@ namespace LojaManager
             dataGridView1.AllowUserToDeleteRows = false;
 
 
-            dados.DataSource = Cliente.Todos();
+            dados.DataSource = new BindingList<Cliente>(new Cliente().GetAll());
             dataGridView1.DataSource = dados;
 
             txtCodigo.DataBindings.Add("Text", dados, "Codigo", true, DataSourceUpdateMode.OnPropertyChanged);
@@ -30,9 +30,9 @@ namespace LojaManager
             txtTipo.DataBindings.Add("Text", dados, "Tipo", true, DataSourceUpdateMode.OnPropertyChanged);
             txtDataCadastro.DataBindings.Add("Text", dados, "DataCadastro", true, DataSourceUpdateMode.OnPropertyChanged);
 
-            txtCodigoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Codigo", true, DataSourceUpdateMode.OnPropertyChanged);
-            txtDadosContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "DadosContato", true, DataSourceUpdateMode.OnPropertyChanged);
-            txtTipoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Tipo", true, DataSourceUpdateMode.OnPropertyChanged);
+            //txtCodigoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Codigo", true, DataSourceUpdateMode.OnPropertyChanged);
+            //txtDadosContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "DadosContato", true, DataSourceUpdateMode.OnPropertyChanged);
+            //txtTipoContato.DataBindings.Add("Text", ((Cliente)dados.Current).Contatos, "Tipo", true, DataSourceUpdateMode.OnPropertyChanged);
             
 
 
@@ -59,7 +59,7 @@ namespace LojaManager
         {
             if (MessageBox.Show("Deseja realmente apagar este cliente?", "Confirme", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
-                ((Cliente)dados.Current).Apagar();
+                ((Cliente)dados.Current).Delete();
                 dados.RemoveCurrent();
             }
             
