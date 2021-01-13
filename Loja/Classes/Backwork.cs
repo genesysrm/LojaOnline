@@ -247,13 +247,13 @@ namespace Loja.Classes
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.Connection = cn;
-                    cmd.CommandText = "Select * From {0} Where Codigo = @codig{1}";
+                    cmd.CommandText = "Select * From {0} Where {1}";
                     PropertyInfo pro = (PropertyInfo)typeof(T).GetProperties().ToList().FirstOrDefault(
                         p => p.GetCustomAttribute(typeof(DataObjectFieldAttribute)) != null);
 
+
                     cmd.Parameters.AddWithValue("@" + pro.Name, ChangeType(value, pro.PropertyType));
                     cmd.CommandText = string.Format(cmd.CommandText, typeof(T).Name, pro.Name + "=@" + pro.Name);
-
 
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
@@ -262,7 +262,6 @@ namespace Loja.Classes
                             dr.Read();
                             _return = new T();
                             _return = ConvertRowEntity(dr);
-
                         }
                     }
                 }
