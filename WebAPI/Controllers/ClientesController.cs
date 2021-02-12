@@ -12,30 +12,84 @@ namespace WebAPI.Controllers
     public class ClientesController : ApiController
     {
         // GET: api/Clientes
-        public IEnumerable<Cliente> Get()
+        public IHttpActionResult Get()
         {
-            return new Cliente().GetAll();
+
+            try
+            {
+                return Ok(new Cliente().GetAll());
+            }
+            catch(Exception)
+            {
+                throw;
+            }
+            
         }
 
         // GET: api/Clientes/5
-        public Cliente Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            return new Cliente(id);
+            Cliente _return = new Cliente(id);
+            if (_return.Codigo == 0)
+            {             
+                return NotFound();
+            } else
+
+            return Ok(_return);
+            
         }
 
         // POST: api/Clientes
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]Cliente value)
         {
+            try
+            {
+                value.Insert();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return Ok();
         }
 
         // PUT: api/Clientes/5
-        public void Put(int id, [FromBody]string value)
+        public IHttpActionResult Put(int id, [FromBody]Cliente value)
         {
+            Cliente cli = new Cliente(id);
+            cli.Codigo = value.Codigo;
+            cli.Nome = value.Nome;
+            cli.DataCadastro = value.DataCadastro;
+            cli.Tipo = value.Tipo;
+
+            try
+            {
+                cli.Update();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return Ok();
         }
 
         // DELETE: api/Clientes/5
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
+            Cliente cli = new Cliente(id);
+
+            try
+            {
+                cli.Delete();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return Ok();
         }
     }
 }
