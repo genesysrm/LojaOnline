@@ -36,7 +36,6 @@ namespace Loja.Classes
             }
             return Convert.ChangeType(value, conversionType);
         }
-
         public static T ConvertRowEntity(SqlDataReader dr)
         {
             T _return = new T();
@@ -160,7 +159,6 @@ namespace Loja.Classes
 
             return _return;
         }
-
         public void Gravar()
         {
             if ((bool)typeof(T).GetProperty("IsNew").GetValue(this) == true)

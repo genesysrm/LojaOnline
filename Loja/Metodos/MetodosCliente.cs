@@ -40,7 +40,6 @@ namespace Loja.Classes
             this._isModified = false;
            
         }
- 
   
     public void Dispose()
         {
